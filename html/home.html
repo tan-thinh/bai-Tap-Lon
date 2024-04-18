@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <!-- <script src="../js/bootstrap.min.js"></script> -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+    <div class="bg-dark" id="running-text">
+        <p>Sản phẩm demo cho bài tập lớn môn Web thầy Thuận</p>
+    </div>
+    <!-- header -->
+    <div class="header">
+        <div class="container w-100 " style="height: 65%;">
+            <div class="navbar navbar-expand-sm w-100 h-100">
+                <a href="../html/home.html" class="navbar-brand w-25 h-100 mb-3 col"> <img src="../img/logo.jpg" class="w-100 h-100" alt="" width="100%"></a>
+                <div class="form w-50 h-75 col">
+                    <form action="" class="h-100 ">
+                        <div class="row w-100 h-50 mt-4 ms-4">
+                            <input type="text" name="" id="search" class="form-control w-75 border-black" placeholder="Nhập từ khóa" required style="height: 37px;">
+                            <button type="submit" class="btn btn-light form-check-inline h-100  ms-2" id="btnsearch" style="width: 47px; border: 1px solid black; background-color: rgba(170,176,182,255);">
+                                <i class="fa-solid fa-magnifying-glass h-100" style="width: 17px;"></i></button>
+                        </div>
+
+                    </form>
+                </div>
+                <p class="ms-4 col-1" style="font-weight: bolder;">Tổng Đài: 22637241</p>
+                <div class="row w-25 h-50 mt-3 col">
+                    <button type="button" class="btn w-25 col" style="height: 100px;"><i class="fa-solid fa-cart-shopping h-50"></i></button>
+                    <button type="button" class="btn w-25 col" style="height: 100px;" data-bs-toggle="modal" data-bs-target="#MyModal"><i class="fa-solid fa-user h-50"></i></button>
+                    <span class="w-50 fs-6 mt-3 col" id="user"></span>
+
+                </div>
+            </div>
+        </div>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark w-100 " style="height: 35%;" id="nav">
+            <p class="navbar-brand mt-3 ms-2">Free ship cho đơn hàng từ 800.000đ</p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" data-bs-dismiss="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-5">
+                    <li class="nav-item ms-2"><a class="nav-link" href="../html/home.html">Trang Chủ</a></li>
+                    <li class="nav-item  ms-2"><a class="nav-link" href="../html/introduce.html">Giới Thiệu</a></li>
+                    <li class="nav-item dropdown ms-2"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Sản phẩm</a>
+                        <ul class="dropdown-menu">
+                            <li class="li-dropdown ">
+                                <a href="#" class="dropdown-item">Sản phẩm mới</a>
+                            </li>
+                            <li class="li-dropdown ">
+                                <a href="#" class="dropdown-item">túi vải</a>
+                            </li>
+                            <li class="li-dropdown ">
+                                <a href="#" class="dropdown-item">Túi đeo chéo</a>
+                            </li>
+                            <li class="li-dropdown">
+                                <a href="#" class="dropdown-item">Túi xách tay</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item  ms-2"><a class="nav-link" href="../html/news.html">Tin tức</a></li>
+                    <li id="dangnhap" class="nav-item  ms-2"><a class="nav-link" href="../html/login.html">Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </div>
+    <!-- content -->
+
+    <div class="container w-100 mt-5" style="font-size: 15px;">
+
+        <!-- row1 -->
+        <div class="row w-100">
+            <div class="col-sm-3 col-6 ">
+                <div class="card w-100 h-50">
+                    <div class="card-header h-100" style="background-color: rgba(170,176,182,255);" id="hover">
+                        <img src="../img/sp1/so1.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover1">
+                        <img src="../img/sp1/so2.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover2">
+                    </div>
+                    <div class="card-body" style=" height: 90%; line-height: 100%;border: 1px solid rgba(170,176,182,255); 
+                    border-bottom-left-radius: 10%; border-bottom-right-radius: 10%;">
+                        <p>Túi Đeo Chéo Nữ Charles & Keith CNK Quilted Push-Lock Chain Handle Bag Black th_Shop CK1-123 Màu Đen</p>
+                        <div class="row" id="star">
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <p style="width: 30%; font-size: 13px;">(105)</p>
+                        </div>
+                        <div class="row">
+                            <p class="w-50" style="color:red; font-size: 20px;">1.800.000 ₫</p>
+                            <button type="button" class="btn btn-outline-secondary btn-detail" style="width: 40%;">Chi Tiết</button>
+                        </div>
+                        <div class="khuyenmai">
+                            <p>-20%</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 ">
+                <div class="card w-100 h-50">
+                    <div class="card-header h-100" style="background-color: rgba(170,176,182,255);" id="hover">
+                        <img src="../img/sp2/so1.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover1">
+                        <img src="../img/sp2/so2.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover2">
+                    </div>
+                    <div class="card-body" style="height: 90%; line-height: 100%;border: 1px solid rgba(170,176,182,255) ; 
+                    border-bottom-left-radius: 10%; border-bottom-right-radius: 10%;">
+                        <p class="">Túi xách tay công sở, túi đeo chéo nữ da ngâm dạo phố phong cách hàn quốc th_Shop CK2-456
+                        </p>
+                        <div class="row" id="star">
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <p style="width: 30%; font-size: 13px;">(200)</p>
+                        </div>
+                        <div class="row">
+                            <p class="w-50" style="color:red; font-size: 20px;">349.000 ₫</p>
+                            <button type="button" class="btn btn-outline-secondary btn-detail" style="width: 40%;">Chi Tiết</button>
+                        </div>
+                        <div class="khuyenmai">
+                            <p>-20%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 ">
+                <div class="card w-100 h-50">
+                    <div class="card-header h-100" style="background-color: rgba(170,176,182,255);" id="hover">
+                        <img src="../img/sp3/so1.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover1">
+                        <img src="../img/sp3/so2.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover2">
+                    </div>
+                    <div class="card-body" style="height: 90%; line-height: 100%;border: 1px solid rgba(170,176,182,255); 
+                    border-bottom-left-radius: 10%; border-bottom-right-radius: 10%;">
+                        <p>Túi Đeo Chéo Nữ Charles & Keith CNK Philomena Quilted Heart Crossbody Bag while th_Shop CK1-789</p>
+                        <div class="row" id="star">
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <p style="width: 30%; font-size: 13px;">(45)</p>
+                        </div>
+                        <div class="row">
+                            <p class="w-50" style="color:red; font-size: 20px;">999.000 ₫</p>
+                            <button type="button" class="btn btn-outline-secondary btn-detail" style="width: 40%;">Chi Tiết</button>
+                        </div>
+                        <div class="khuyenmai">
+                            <p>-20%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 ">
+                <div class="card w-100 h-50">
+                    <div class="card-header h-100" style="background-color: rgba(170,176,182,255);" id="hover">
+                        <img src="../img/sp4/so1.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover1">
+                        <img src="../img/sp4/so2.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover2">
+                    </div>
+                    <div class="card-body" style="height: 90%; line-height: 100%;border: 1px solid rgba(170,176,182,255); 
+                    border-bottom-left-radius: 10%; border-bottom-right-radius: 10%;">
+                        <p>Túi vải Canvas iCase bộ sưu tập họa tiết cute - nhiều mẫu mã phong cách Hàn Quốc th_Shop CK2-123</p>
+                        <div class="row" id="star">
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <p style="width: 30%; font-size: 13px;">(300)</p>
+                        </div>
+                        <div class="row">
+                            <p class="w-50" style="color:red; font-size: 20px;">149.000 ₫</p>
+                            <button type="button" class="btn btn-outline-secondary btn-detail" style="width: 40%;">Chi Tiết</button>
+                        </div>
+                        <div class="khuyenmai">
+                            <p>-40%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- row 2 -->
+        <div class="row w-100">
+            <div class="col-sm-3 col-6 ">
+                <div class="card w-100 h-50">
+                    <div class="card-header h-100" style="background-color: rgba(170,176,182,255);" id="hover">
+                        <img src="../img/sp5/so1.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover1">
+                        <img src="../img/sp5/so2.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover2">
+                    </div>
+                    <div class="card-body" style=" height: 90%; line-height: 100%;border: 1px solid rgba(170,176,182,255); 
+                    border-bottom-left-radius: 10%; border-bottom-right-radius: 10%;">
+                        <p>Túi Vải Canvas Đeo Chéo Optusbag Phong Cách Nhật Bản Thời Trang th_Shop CK2-456</p>
+                        <div class="row" id="star">
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <p style="width: 30%; font-size: 13px;">(105)</p>
+                        </div>
+                        <div class="row">
+                            <p class="w-50" style="color:red; font-size: 20px;">83.000 ₫</p>
+                            <button type="button" class="btn btn-outline-secondary btn-detail" style="width: 40%; ">Chi Tiết</button>
+                        </div>
+                        <div class="khuyenmai">
+                            <p>-20%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 ">
+                <div class="card w-100 h-50">
+                    <div class="card-header h-100" style="background-color: rgba(170,176,182,255); " id="hover">
+                        <img src="../img/sp6/so1.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover1">
+                        <img src="../img/sp6/so2.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover2">
+                    </div>
+                    <div class="card-body" style="height: 90%; line-height: 100%;border: 1px solid rgba(170,176,182,255) ; 
+                    border-bottom-left-radius: 10%; border-bottom-right-radius: 10%;">
+                        <p class="">Túi Đeo Chéo Canvas Cỡ Lớn Thời Trang Hàn Quốc Học Sinh Sinh Viên th_Shop CK2-789</p>
+                        <div class="row" id="star">
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <p style="width: 30%; font-size: 13px;">(30)</p>
+                        </div>
+                        <div class="row">
+                            <p class="w-50" style="color:red; font-size: 20px;">89.000 ₫</p>
+                            <button type="button" class="btn btn-outline-secondary btn-detail" style="width: 40%;">Chi Tiết</button>
+                        </div>
+                        <div class="khuyenmai">
+                            <p>-40%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 ">
+                <div class="card w-100 h-50">
+                    <div class="card-header h-100" style="background-color: rgba(170,176,182,255);" id="hover">
+                        <img src="../img/sp7/so1.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover1">
+                        <img src="../img/sp7/so2.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover2">
+                    </div>
+                    <div class="card-body" style="height: 90%; line-height: 100%;border: 1px solid rgba(170,176,182,255); 
+                    border-bottom-left-radius: 10%; border-bottom-right-radius: 10%;">
+                        <p>Túi xách tay công sở, túi xách tay đi tiệc nữ phối khăn lụa th_shop CK3-123</p>
+                        <div class="row" id="star">
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <p style="width: 30%; font-size: 13px;">(78)</p>
+                        </div>
+                        <div class="row">
+                            <p class="w-50" style="color:red; font-size: 20px;">572.000 ₫</p>
+                            <button type="button" class="btn btn-outline-secondary btn-detail" style="width: 40%;">Chi Tiết</button>
+                        </div>
+                        <div class="khuyenmai">
+                            <p>-20%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 ">
+                <div class="card w-100 h-50">
+                    <div class="card-header h-100" style="background-color: rgba(170,176,182,255);" id="hover">
+                        <img src="../img/sp8/so1.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover1">
+                        <img src="../img/sp8/so2.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover2">
+                    </div>
+                    <div class="card-body" style="height: 90%; line-height: 100%;border: 1px solid rgba(170,176,182,255); 
+                    border-bottom-left-radius: 10%; border-bottom-right-radius: 10%;">
+                        <p>Túi đeo chéo công sở nữ, túi đeo vai giáo viên phom lớn chứa tài liệu A4 th_shop CK3-456</p>
+                        <div class="row" id="star">
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <p style="width: 30%; font-size: 13px;">(90)</p>
+                        </div>
+                        <div class="row">
+                            <p class="w-50" style="color:red; font-size: 20px;">930,000 ₫</p>
+                            <button type="button" class="btn btn-outline-secondary btn-detail" style="width: 40%;">Chi Tiết</button>
+                        </div>
+                        <div class="khuyenmai">
+                            <p>-20%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- row 3 -->
+        <div class="row w-100">
+            <div class="col-sm-3 col-6 ">
+                <div class="card w-100 h-50">
+                    <div class="card-header h-100" style="background-color: rgba(170,176,182,255);" id="hover">
+                        <img src="../img/sp9/so1.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover1">
+                        <img src="../img/sp9/so2.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover2">
+                    </div>
+                    <div class="card-body" style=" height: 90%; line-height: 100%;border: 1px solid rgba(170,176,182,255); 
+                    border-bottom-left-radius: 10%; border-bottom-right-radius: 10%;">
+                        <p>Túi xách tay đi chơi, túi đeo vai nữ công sở phom đứng khoá nịt th_Shop CK3-789
+                        </p>
+                        <div class="row" id="star">
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <p style="width: 30%; font-size: 13px;">(80)</p>
+                        </div>
+                        <div class="row">
+                            <p class="w-50" style="color:red; font-size: 20px;">900.000 ₫</p>
+                            <button type="button" class="btn btn-outline-secondary btn-detail" style="width: 40%;">Chi Tiết</button>
+                        </div>
+                        <div class="khuyenmai">
+                            <p>-20%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 ">
+                <div class="card w-100 h-50">
+                    <div class="card-header h-100" style="background-color: rgba(170,176,182,255);" id="hover">
+                        <img src="../img/sp10/so1.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover1">
+                        <img src="../img/sp10/so2.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover2">
+                    </div>
+                    <div class="card-body" style="height: 90%; line-height: 100%;border: 1px solid rgba(170,176,182,255) ; 
+                    border-bottom-left-radius: 10%; border-bottom-right-radius: 10%;">
+                        <p class="">Túi đeo vai nữ đi tiệc phom hộp, túi đeo chéo đi chơi nắp gập khoá chữ nhật th_Shop CK4-123</p>
+                        <div class="row" id="star">
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <p style="width: 30%; font-size: 13px;">(90)</p>
+                        </div>
+                        <div class="row">
+                            <p class="w-50" style="color:red; font-size: 20px;">780.000 ₫</p>
+                            <button type="button" class="btn btn-outline-secondary btn-detail" style="width: 40%;">Chi Tiết</button>
+                        </div>
+                        <div class="khuyenmai">
+                            <p>-20%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 ">
+                <div class="card w-100 h-50">
+                    <div class="card-header h-100" style="background-color: rgba(170,176,182,255);" id="hover">
+                        <img src="../img/sp11/so1.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover1">
+                        <img src="../img/sp11/so2.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover2">
+                    </div>
+                    <div class="card-body" style="height: 90%; line-height: 100%;border: 1px solid rgba(170,176,182,255); 
+                    border-bottom-left-radius: 10%; border-bottom-right-radius: 10%;">
+                        <p>Túi xách tay đi tiệc, túi đeo chéo công sở nữ phối màu phom hộp th_Shop CK4-456</p>
+                        <div class="row" id="star">
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <p style="width: 30%; font-size: 13px;">(105)</p>
+                        </div>
+                        <div class="row">
+                            <p class="w-50" style="color:red; font-size: 20px;">800.000 ₫</p>
+                            <button type="button" class="btn btn-outline-secondary btn-detail" style="width: 40%;">Chi Tiết</button>
+                        </div>
+                        <div class="khuyenmai">
+                            <p>-40%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 ">
+                <div class="card w-100 h-50">
+                    <div class="card-header h-100" style="background-color: rgba(170,176,182,255);" id="hover">
+                        <img src="../img/sp12/so1.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover1">
+                        <img src="../img/sp12/so2.jpg" alt="" class="card-img w-100 h-100" width="100%" style=" border-bottom-left-radius: 30%;" id="hover2">
+                    </div>
+                    <div class="card-body" style="height: 90%; line-height: 100%;border: 1px solid rgba(170,176,182,255); 
+                    border-bottom-left-radius: 10%; border-bottom-right-radius: 10%;">
+                        <p>Túi tote đeo vai canvas khóa kéo form to đựng vừa laptop thời trang th_Shop CK4-789 Màu Đen</p>
+                        <div class="row" id="star">
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <label for="#"><i class="fa-solid fa-star"></i></label>
+                            <p style="width: 30%; font-size: 13px;">(67)</p>
+                        </div>
+                        <div class="row">
+                            <p class="w-50" style="color:red; font-size: 20px;">100.000 đ</p>
+                            <button type="button" class="btn btn-outline-secondary btn-detail" style="width: 40%;">Chi Tiết</button>
+                        </div>
+                        <div class="khuyenmai">
+                            <p>-35%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <br>
+    <hr>
+
+    <div class="footer bg-dark" style="height: 500px; color: rgb(235, 225, 213); font-size: 19px;">
+        <div class="container-fluid"><br>
+            <div class="row w-25 m-auto">
+                <button type="button" class="btn col border-light"><a href=""><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></button>
+                <button type="button" class="btn col border-light ms-2"><a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></button>
+                <button type="button" class="btn col border-light ms-2"><a href=""><i class="fa-brands fa-google" style="color: #f2f2f2;"></i></a></button>
+                <button type="button" class="btn col border-light ms-2"><a href=""><i class="fa-brands fa-instagram" style="color: #fafafa;"></i></a></button>
+                <button type="button" class="btn col border-light ms-2"><a href=""><i class="fa-solid fa-envelope" style="color: #f2f2f2;"></i></a></button>
+                <button type="button" class="btn col border-light ms-2"><a href=""><i class="fa-brands fa-vimeo" style="color: #f1f4f8;"></i></a></button>
+            </div>
+            <br>
+            <div class="row w-50 m-auto" style="height: 40px;">
+                <label for="" class="form-check h-100" style="width: 20%;">Sign up: </label>
+                <input type="email" name="" id="" class="form-control w-50 h-100" placeholder="email">
+                <button type="button" class="btn btn-outline-light h-100 ms-5" style="width: 20%;">Subscribe</button>
+            </div>
+            <br>
+            <p>Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình khuyến mãi hấp dẫn từ Website của chúng tôi. Hãy đăng ký nhận bản tin để cập nhật thông tin mới nhất, các xu hướng thời trang túi xách nữ và nhận các ưu đãi đặc biệt dành riêng cho thành viên của
+                chúng tôi.</p>
+            <p style="margin-left:300px ;">Hãy kết nối với chúng tôi qua [các kênh mạng xã hội] để không bỏ lỡ bất kỳ thông tin nào!</p>
+            <div class="row" style="font-size: 15px;">
+                <div class="col">
+                    <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                    <P>Hướng dẫn mua hàng trực tuyến</P>
+                    <p>hướng dẫn thanh toán</p>
+                    <p>gửi yêu cầu khiếu nại</p>
+                </div>
+                <div class="col">
+                    <h3>CHÍNH SÁCH</h3>
+                    <P>Chính sách quy định chung</P>
+                    <p>Chính sách vận chuyển</p>
+                    <p>Chính sách bảo hành</p>
+                    <p>Chính sách chi doanh nghiệp</p>
+                </div>
+                <div class="col">
+                    <h3>THÔNG TIN KHUYẾN MÃI</h3>
+                    <P>Thông tin khuyến mãi</P>
+                    <p>Sản phẩm bán chạy</p>
+                    <p>Sản phẩm mới</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+    <div class="modal fade" id="MyModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">THÔNG TIN KHÁCH HÀNG</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <tr>
+                            <td><span>Họ Tên: </span></td>
+                            <td><span id="hoten"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Email: </span></td>
+                            <td><span id="email"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Ngày tạo tài khoản: </span></td>
+                            <td><span id="ngaysinh"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Số Điện Thoại: </span></td>
+                            <td><span id="sodt"></span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" id="dangxuat" onclick="dangxuat()">Đăng Xuất</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/home.js"></script>
+</body>
+
+</html>

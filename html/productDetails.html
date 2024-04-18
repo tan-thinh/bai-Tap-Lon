@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <!-- <script src="../js/bootstrap.min.js"></script> -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+    <div class="bg-dark" id="running-text">
+        <p>Sản phẩm demo cho bài tập lớn môn Web thầy Thuận</p>
+    </div>
+    <!-- header -->
+    <div class="header">
+        <div class="container w-100 " style="height: 65%;">
+            <div class="navbar navbar-expand-sm w-100 h-100">
+                <a href="../html/home.html" class="navbar-brand w-25 h-100 mb-3 col"> <img src="../img/logo.jpg" class="w-100 h-100" alt="" width="100%"></a>
+                <div class="form w-50 h-75 col">
+                    <form action="" class="h-100 ">
+                        <div class="row w-100 h-50 mt-4 ms-4">
+                            <input type="text" name="" id="search" class="form-control w-75 border-black" placeholder="Nhập từ khóa" required style="height: 37px;">
+                            <button type="submit" class="btn btn-light form-check-inline h-100  ms-2" id="btnsearch" style="width: 47px; border: 1px solid black; background-color: rgba(170,176,182,255);">
+                                <i class="fa-solid fa-magnifying-glass h-100" style="width: 17px;"></i></button>
+                        </div>
+
+                    </form>
+                </div>
+                <p class="ms-4 col-1" style="font-weight: bolder;">Tổng Đài: 22637241</p>
+                <div class="row w-25 h-50 mt-3 col">
+                    <button type="button" class="btn w-25 col" style="height: 100px;"><i class="fa-solid fa-cart-shopping h-50"></i></button>
+                    <button type="button" class="btn w-25 col" style="height: 100px;" data-bs-toggle="modal" data-bs-target="#MyModal"><i class="fa-solid fa-user h-50"></i></button>
+                    <span class="w-50 fs-6 mt-3 col" id="user"></span>
+
+                </div>
+            </div>
+        </div>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark w-100 " style="height: 35%;" id="nav">
+            <p class="navbar-brand mt-3 ms-2">Free ship cho đơn hàng từ 800.000đ</p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" data-bs-dismiss="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-5">
+                    <li class="nav-item ms-2"><a class="nav-link" href="../html/home.html">Trang Chủ</a></li>
+                    <li class="nav-item  ms-2"><a class="nav-link" href="../html/introduce.html">Giới Thiệu</a></li>
+                    <li class="nav-item dropdown ms-2"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Sản phẩm</a>
+                        <ul class="dropdown-menu">
+                            <li class="li-dropdown ">
+                                <a href="#" class="dropdown-item">Sản phẩm mới</a>
+                            </li>
+                            <li class="li-dropdown ">
+                                <a href="#" class="dropdown-item">túi vải</a>
+                            </li>
+                            <li class="li-dropdown ">
+                                <a href="#" class="dropdown-item">Túi đeo chéo</a>
+                            </li>
+                            <li class="li-dropdown">
+                                <a href="#" class="dropdown-item">Túi xách tay</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item  ms-2"><a class="nav-link" href="../html/news.html">Tin tức</a></li>
+                    <li id="dangnhap" class="nav-item  ms-2"><a class="nav-link" href="../html/login.html">Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </div>
+    <!-- content -->
+
+    <div class="container w-100 mt-5" style="font-size: 15px;">
+        <div class="row">
+            <div class="col-sm-5 col-12">
+                <!-- Carousel -->
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner" style="border: 1px solid black;">
+                        <div class="carousel-item active">
+                            <img src="../img/sp1/so1.jpg" id="img1" alt="Los Angeles" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/sp1/so2.jpg" id="img2" alt="Chicago" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/sp1/so3.jpg" id="img3" alt="New York" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/sp1/so4.jpg" id="img4" alt="New York" class="d-block" style="width:100%">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon black-button"></span>
+                  </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon black-button"></span>
+                  </button>
+                </div>
+                <br>
+                <p class="text-center fs-3">Hình ảnh chi tiết</p>
+            </div>
+            <div class="col-sm-7 col-12">
+                <div class="col-sm-8 col-11" style="line-height: 20px; float: left;">
+                    <h4 id="name">Túi Đeo Chéo Nữ Charles & Keith CNK Quilted Push-Lock Chain Handle Bag Black th_Shop CK1-123 Màu Đen</h4>
+                    <div class="row" id="star">
+                        <label for="#"><i class="fa-solid fa-star" style="color: rgb(231, 231, 54)"></i></label>
+                        <label for="#"><i class="fa-solid fa-star" style="color: rgb(231, 231, 54)"></i></label>
+                        <label for="#"><i class="fa-solid fa-star" style="color: rgb(231, 231, 54)"></i></label>
+                        <label for="#"><i class="fa-solid fa-star" style="color: rgb(231, 231, 54)"></i></label>
+                        <label for="#"><i class="fa-solid fa-star" style="color: rgb(231, 231, 54)"></i></label>
+                        <p style="width: 30%; font-size: 13px;" id="danhgia">(105)</p>
+                    </div>
+                    <!-- <p id="masp"><b>Mã sản phẩm:</b> CK1-123</p> -->
+                    <b>Mã sản phẩm: </b><span id="masp"></span><br><br>
+                    <b>Tình trạng:</b> <span id="tinhtrang"></span><br><br>
+                    <p><b>Thương hiệu</b> th_Shop</p>
+                    <b>Phân khúc:</b> <span id="tui"></span>
+                    <hr>
+                    <p class="fs-4"><b style="color: red;" id="tiensales">1.800.000 ₫</b><s style="margin-left: 40px;" id="tien">2.160.000 ₫</s></p>
+                    <b>Màu sắc: </b> <span id="mauSac"></span>
+                    <!-- <div style="width: 40px; height: 35px; border: 1px solid black; background-color: black;"></div> -->
+                    <p>Kích thước:</p>
+                    <div style="width: 300px; height: 35px; border: 1px solid black;">
+                        <p style="margin-top: 5px;" id="kichthuoc">13.5cm x 7.5 x 18cm (Dài x Rộng x Cao)</p>
+                    </div><br>
+                    <b class="fs-4">Chất liệu: </b><span id="chatlieu" class="fs-4"></span><br><br>
+                    <span>
+                        <button type="button" class="btn btn-danger">Thêm vào giỏ</button>
+                        <button type="button" class="btn btn-success ms-3">Mua ngay</button>
+                    </span>
+                </div>
+                <div class="col-sm-4 col-1" style="float: right;margin-top: 100px;">
+                    <div class="productWrapSidebarGroup" style="h1{font-size: 10px;}">
+                        <div class="productWrapSidebarItem">
+                            <img src="https://file.hstatic.net/1000273026/file/giao_hang_nha_9c27c6b5f6bd4155a016ba229794776a.png" alt="ItemSidebar" style="margin-top: 30px;">
+                            <div class="productWrapSidebarContent" style="width: 70%; float: right;margin-left: 5px;">
+                                <h6>GIAO HÀNG MIỄN PHÍ</h6>
+                                <p>Với hóa đơn từ 700.000đ quý khách sẽ được miễn phí giao hàng</p>
+                            </div>
+                        </div>
+                        <div class="productWrapSidebarItem">
+                            <img src="https://file.hstatic.net/1000273026/file/doi_tra_mien_phi_33f96f364c1d4353a7ed072a7079ac04.png" alt="ItemSidebar">
+                            <div class="productWrapSidebarContent">
+                                <h6>ĐỔI TRẢ MIỄN PHÍ</h6>
+                                <p>Trong vòng 10 ngày kể từ ngày mua nếu sản phẩm bị lỗi do nhà sản xuất</p>
+                            </div>
+                        </div>
+                        <div class="productWrapSidebarItem">
+                            <img src="https://file.hstatic.net/1000273026/file/kiem_tra_truoc_khi_nhan_2fbad367b419454292efdabc9595c68c.png" alt="ItemSidebar">
+                            <div class="productWrapSidebarContent">
+                                <h6>KIỂM TRA HÀNG</h6>
+                                <p>Được kiểm tra sản phẩm trước khi ký tên nhận hàng &amp; thanh toán</p>
+                            </div>
+                        </div>
+                        <div class="productWrapSidebarItem">
+                            <img src="https://file.hstatic.net/1000273026/file/san_pham_chat_luong_9646ee8835ea45f8b054b3c9500936e6.png" alt="ItemSidebar">
+                            <div class="productWrapSidebarContent">
+                                <h6>CAM KẾT CHẤT LƯỢNG</h6>
+                                <p>Cam kết sản phẩm đúng với chất lượng miêu tả trên website</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3>Thông tin chi tiết:</h3>
+        <p style="width: 80%;" id="ttct">Túi Đeo Chéo Nữ Charles & Keith CNK Quilted Push-Lock Chain Handle Bag Black CK2-80701360 Màu Đen là chiếc túi dành cho nữ cao cấp đến từ thương hiệu Charles & Keith nổi tiếng của nước Singapore. Màu túi đã thực sự chinh phục được phái đẹp nhờ
+            kiểu dáng thiết kế thanh thoát, trẻ trung cùng gam màu sang trọng, thời thượng mang đến một phong cách sành điệu cho các nàng.</p>
+        <h3>Thương hiệu: </h3>
+        <p style="width: 80%;">th_Shop là thương hiệu giày dép và phụ kiện thời trang Singapore dành cho phái đẹp, với dây chuyền sản xuất nhanh, giá cả phải chăng và các thiết kế mới được tung ra đều đặn hàng tuần.</p>
+    </div>
+    <!-- footer -->
+    <br>
+    <hr>
+
+    <div class="footer bg-dark" style="height: 500px; color: rgb(235, 225, 213); font-size: 19px;">
+        <div class="container-fluid"><br>
+            <div class="row w-25 m-auto">
+                <button type="button" class="btn col border-light"><a href=""><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></button>
+                <button type="button" class="btn col border-light ms-2"><a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></button>
+                <button type="button" class="btn col border-light ms-2"><a href=""><i class="fa-brands fa-google" style="color: #f2f2f2;"></i></a></button>
+                <button type="button" class="btn col border-light ms-2"><a href=""><i class="fa-brands fa-instagram" style="color: #fafafa;"></i></a></button>
+                <button type="button" class="btn col border-light ms-2"><a href=""><i class="fa-solid fa-envelope" style="color: #f2f2f2;"></i></a></button>
+                <button type="button" class="btn col border-light ms-2"><a href=""><i class="fa-brands fa-vimeo" style="color: #f1f4f8;"></i></a></button>
+            </div>
+            <br>
+            <div class="row w-50 m-auto" style="height: 40px;">
+                <label for="" class="form-check h-100" style="width: 20%;">Sign up: </label>
+                <input type="email" name="" id="" class="form-control w-50 h-100" placeholder="email">
+                <button type="button" class="btn btn-outline-light h-100 ms-5" style="width: 20%;">Subscribe</button>
+            </div>
+            <br>
+            <br>
+            <p>Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình khuyến mãi hấp dẫn từ Website của chúng tôi. Hãy đăng ký nhận bản tin để cập nhật thông tin mới nhất, các xu hướng thời trang túi xách nữ và nhận các ưu đãi đặc biệt dành riêng cho thành viên của
+                chúng tôi.</p>
+            <p style="margin-left:300px ;">Hãy kết nối với chúng tôi qua [các kênh mạng xã hội] để không bỏ lỡ bất kỳ thông tin nào!</p>
+            <div class="row" style="font-size: 15px;">
+                <div class="col">
+                    <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                    <P>Hướng dẫn mua hàng trực tuyến</P>
+                    <p>hướng dẫn thanh toán</p>
+                    <p>gửi yêu cầu khiếu nại</p>
+                </div>
+                <div class="col">
+                    <h3>CHÍNH SÁCH</h3>
+                    <P>Chính sách quy định chung</P>
+                    <p>Chính sách vận chuyển</p>
+                    <p>Chính sách bảo hành</p>
+                    <p>Chính sách chi doanh nghiệp</p>
+                </div>
+                <div class="col">
+                    <h3>THÔNG TIN KHUYẾN MÃI</h3>
+                    <P>Thông tin khuyến mãi</P>
+                    <p>Sản phẩm bán chạy</p>
+                    <p>Sản phẩm mới</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="MyModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">THÔNG TIN KHÁCH HÀNG</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <tr>
+                            <td><span>Họ Tên: </span></td>
+                            <td><span id="hoten"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Email: </span></td>
+                            <td><span id="email"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Ngày tạo tài khoản: </span></td>
+                            <td><span id="ngaysinh"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Số Điện Thoại: </span></td>
+                            <td><span id="sodt"></span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" id="dangxuat" onclick="dangxuat()">Đăng Xuất</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/home.js"></script>
+    <script src="../js/productdetail.js"></script>
+
+</body>
+
+</html>
